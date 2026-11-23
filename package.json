@@ -1,0 +1,37 @@
+{
+  "name": "@velcurium/engineering-fits",
+  "version": "0.1.0",
+  "description": "ISO 286 hole and shaft fits, metric and Unified thread pilots, clearance holes, and drawing callouts.",
+  "license": "MIT",
+  "author": "Velcurium",
+  "homepage": "https://velcurium.com/tools",
+  "type": "module",
+  "main": "./index.js",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./index.js",
+      "default": "./index.js"
+    },
+    "./data/iso286-preferred-fits.csv": "./data/iso286-preferred-fits.csv",
+    "./data/tap-drill-clearance-holes.csv": "./data/tap-drill-clearance-holes.csv"
+  },
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "src/",
+    "data/",
+    "scripts/",
+    "tests/",
+    "docs/fit-50-h7-p6.png"
+  ],
+  "scripts": {
+    "test": "node --test",
+    "data:generate": "node scripts/generate-csv.mjs",
+    "data:check": "node scripts/generate-csv.mjs --check"
+  },
+  "engines": { "node": ">=18" },
+  "publishConfig": { "access": "public" },
+  "keywords": ["cnc", "iso-286", "tolerances", "fits", "tap-drill", "clearance-hole"]
+}

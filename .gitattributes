@@ -1,0 +1,2 @@
+# Preserve the generated CSV bytes in clones and source archives.
+data/*.csv -text whitespace=trailing-space,space-before-tab,cr-at-eol
