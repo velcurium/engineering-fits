@@ -5,6 +5,13 @@
   "license": "MIT",
   "author": "Velcurium",
   "homepage": "https://velcurium.com/tools",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/velcurium/engineering-fits.git"
+  },
+  "bugs": {
+    "url": "https://github.com/velcurium/engineering-fits/issues"
+  },
   "type": "module",
   "main": "./index.js",
   "types": "./index.d.ts",
